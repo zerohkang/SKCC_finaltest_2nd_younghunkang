@@ -213,10 +213,10 @@ yum repolist all
  sudo yum install oracle-j2sdk1.7
  ```
 
- ![](자바버전확인.jpg)
+ ![](자바버전확인.PNG)
 
 
-# Util01에 클라우데라 서버설치
+# cm에 클라우데라 서버설치
 
 ```
 # hostname
@@ -225,7 +225,7 @@ yum repolist all
 ![](5.15.2서버설치완료.PNG)
 
 
-# util01 마리아db 설치
+# cm 마리아db 설치
 
 ```
 # hostname
@@ -306,25 +306,25 @@ C. DB, USER 생성
 
 ```
 CREATE DATABASE scm DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
-GRANT ALL ON scm.* TO 'scm-user'@'%' IDENTIFIED BY 'scm-user';
+GRANT ALL ON scm.* TO 'scm'@'%' IDENTIFIED BY 'scm';
 
 CREATE DATABASE amon DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
-GRANT ALL ON amon.* TO 'amon-user'@'%' IDENTIFIED BY 'amon-user';
+GRANT ALL ON amon.* TO 'amon'@'%' IDENTIFIED BY 'amon';
 
 CREATE DATABASE rmon DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
-GRANT ALL ON rmon.* TO 'rmon-user'@'%' IDENTIFIED BY 'rmon-user';
+GRANT ALL ON rmon.* TO 'rmon'@'%' IDENTIFIED BY 'rmon';
 
 CREATE DATABASE hue DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
-GRANT ALL ON hue.* TO 'hue-user'@'%' IDENTIFIED BY 'hue-user';
+GRANT ALL ON hue.* TO 'hue'@'%' IDENTIFIED BY 'hue';
 
 CREATE DATABASE metastore DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
-GRANT ALL ON metastore.* TO 'metastore-user'@'%' IDENTIFIED BY 'metastore-user';
+GRANT ALL ON metastore.* TO 'metastore'@'%' IDENTIFIED BY 'metastore';
 
 CREATE DATABASE sentry DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
-GRANT ALL ON sentry.* TO 'sentry-user'@'%' IDENTIFIED BY 'sentry-user';
+GRANT ALL ON sentry.* TO 'sentry'@'%' IDENTIFIED BY 'sentry';
 
 CREATE DATABASE oozie DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
-GRANT ALL ON oozie.* TO 'oozie-user'@'%' IDENTIFIED BY 'oozie-user';
+GRANT ALL ON oozie.* TO 'oozie'@'%' IDENTIFIED BY 'oozie';
 
 FLUSH PRIVILEGES;
 
