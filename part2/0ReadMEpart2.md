@@ -53,7 +53,7 @@ create external table solution
  ;
 
 데이터 삽입
-![](3번데이터 삽입.PNG)
+![](3번데이터삽입.PNG)
 
 
 
@@ -145,7 +145,7 @@ Found 3 items
 10010079	Ursa	Justice	3321 Risus. Ave	San Jose	CA	96850
 10010088	Declan	Booth	4048 Nunc Rd.	San Francisco	CA	96324
 ```
-![](4번 결과.PNG)
+![](4번결과.PNG)
 
 ##
 5번
@@ -163,7 +163,7 @@ and   e.state = 'CA'
 ```
 
 5번결과
-![](5번 수행.PNG)
+![](5번수행.PNG)
 
 ##
 6번 테이블 생성
@@ -197,7 +197,7 @@ from employee;
 ```
 
 6번결과
-![](6번 결과.PNG)
+![](6번결과.PNG)
 
 ##
 7번 
@@ -229,7 +229,7 @@ sqoop export \
 8번 수행결과
 ![](8번과정1.PNG)
 8번 데이터결과
-![](8번 결과.PNG)
+![](8번결과.PNG)
 
 ##
 9번
